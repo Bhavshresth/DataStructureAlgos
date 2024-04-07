@@ -1,4 +1,3 @@
-//LinkedList     || 	Stack		||		Queue
 #include<iostream>
 #include<stack>
 #include<queue>
@@ -80,11 +79,11 @@ int main(){
 	}
 	printList();
 	
-	queue<int> q;
-	stack<int> s;
+	queue<int> q;//fifo		front
+	stack<int> s;//lifo 	top
 	
 	for(int i=0;i<5;i++){
-	q.push(arr[i]);
+	q.push(arr[i]);//used to insert element of the arr in stack and queue
 	s.push(arr[i]);
 	}
 	cout<<"printing queue"<<endl;
