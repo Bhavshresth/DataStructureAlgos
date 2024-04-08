@@ -8,32 +8,32 @@ using namespace std;
 struct Node{
 	int val;
 	Node *next;
-};
-struct Node *head;
+};//used to create a Node
+struct Node *head;//used to create a head part of a node
 
 void printList(){
-	Node *temp=head;
+	Node *temp=head;//duplicate variable
 	while(temp!=NULL){
-		cout<<temp->val<<"->";
-		temp=temp->next;
+		cout<<temp->val<<"->";//print 
+		temp=temp->next;//move to next element
 	}
 	cout<<endl;
 }
 
 void addList(int x){
 	Node *temp=head;
-	if(head==NULL){
-		head=new Node;
-		head->val=x;
-		head->next=NULL;
+	if(head==NULL){//if 1st element is null
+		head=new Node;//create a new node
+		head->val=x;//set value of head
+		head->next=NULL;//set next to null
 	}
 	else{
 		while(temp->next!=NULL){
-			temp=temp->next;
+			temp=temp->next;//continue till it finds null node empty
 		}
-		temp->next=new Node;
-		temp->next->val=x;
-		temp->next->next=NULL;
+		temp->next=new Node;//next to new Node
+		temp->next->val=x;//set value 
+		temp->next->next=NULL;//next next to Null
 	}
 }
 
