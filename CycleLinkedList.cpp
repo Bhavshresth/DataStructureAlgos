@@ -48,7 +48,7 @@ int main(){
 	struct Node* second=addNode(8);
 	second->next=first;
 	bool loopExist=false;
-	struct Node *slow=head,*fast=head;
+	struct Node *slow=head,*fast=head;//hare and tortoise Algorithism
 	while(fast && slow && fast->next){
 		slow=slow->next;
 		fast=fast->next->next;
