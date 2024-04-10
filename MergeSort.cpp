@@ -12,7 +12,7 @@ void merge(vector<int> &arr,vector<int> &temp,int low,int mid,int high){
 	int y=0;
 	while(i<=mid && j<=high){
 		if(arr[i]>=arr[j]){
-			temp[y++]=arr[i];//filling element into the main array
+			temp[y++]=arr[i];//filling element into the temp array
 			i++;
 		}
 		else{
